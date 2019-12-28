@@ -28,7 +28,7 @@ class Game extends Component {
         >
           <Settings></Settings>
           {/* Clicker */}
-          {/* <div>
+          <div>
             <img
               src={pclicker}
               className="App-pclicker"
@@ -37,8 +37,9 @@ class Game extends Component {
                 height: 150,
                 width: 150
               }}
+              onClick={this.props.onIncrement}
             />
-          </div> */}
+          </div>
         </div>
       </div>
     );

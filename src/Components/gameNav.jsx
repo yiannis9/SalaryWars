@@ -3,13 +3,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 class Gamenav extends Component {
-  state = {
-    revenue: 0,
-    reputation: 0,
-    security: 0,
-    massSecurity: 0
-  };
-
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark mx-auto row">
@@ -28,7 +21,7 @@ class Gamenav extends Component {
               <h3 className="row justify-content-center">Revenue</h3>
               <h3 className="row justify-content-center">
                 <span className="badge badge-success badge-swing">
-                  {this.state.revenue}
+                  {this.props.revenue}
                   <i className="fas fa-dollar-sign pl-5"></i>
                 </span>
               </h3>
@@ -38,7 +31,7 @@ class Gamenav extends Component {
               <h3 className="row justify-content-center">Security</h3>
               <h3 className="row justify-content-center">
                 <span className="badge badge-warning badge-swing">
-                  {this.state.security}
+                  {this.props.security}
                   <i className="fas fa-shield-alt pl-4"></i>
                 </span>
               </h3>
@@ -48,7 +41,7 @@ class Gamenav extends Component {
               <h3 className="row justify-content-center">Mass Security</h3>
               <h3 className="row justify-content-center">
                 <span className="badge badge-danger badge-swing">
-                  {this.state.massSecurity}
+                  {this.props.massSecurity}
                   <i className="fab fa-fort-awesome pl-4"></i>
                 </span>
               </h3>
@@ -57,11 +50,6 @@ class Gamenav extends Component {
         </div>
       </nav>
     );
-  }
-
-  incrementRevenue() {
-    const { revenue } = this.state;
-    return revenue === 0 ? "zero" : revenue;
   }
 }
 
