@@ -17,17 +17,15 @@ class App extends Component {
       myPos: 0,
       turn: 0,
       revenue: 0,
-      reputation: 0,
       security: 0,
       massSecurity: 0,
       incFactor: 1.5
     };
-
     this.gameStart = this.gameStart.bind(this);
     this.handleIncrement = this.handleIncrement.bind(this);
   }
 
-  gameStart = () => {
+  gameStart() {
     this.setState(state => ({
       gameStarted: !this.state.gameStarted,
       companyName: null,
@@ -39,11 +37,10 @@ class App extends Component {
       security: 0,
       massSecurity: 0
     }));
-  };
+  }
 
   handleIncrement() {
     this.setState({ revenue: this.state.revenue + 1 * this.state.incFactor });
-    console.log(this.state.revenue);
   }
 
   render() {
@@ -56,7 +53,13 @@ class App extends Component {
         ></Gamenav>
         {this.state.gameStarted ? (
           <div className="App-body text-white container-fluid my-3 mx-1 row">
-            <Game onIncrement={this.handleIncrement}></Game>
+            <Game
+              onIncrement={this.handleIncrement}
+              companyName={this.state.companyName}
+              turn={this.state.turn}
+              myPos={this.state.myPos}
+              players={this.state.players}
+            ></Game>
             <Sidebar onClick={this.gameStart}></Sidebar>
           </div>
         ) : (

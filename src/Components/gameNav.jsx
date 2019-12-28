@@ -8,18 +8,18 @@ class Gamenav extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark mx-auto row">
         {/* Navbar brand */}
         <div className="col-3 navbar-brand">
-          <h2 className="pl-1 pr-5 py-3 border rounded-pill">
+          <h2 className="pl-1 pr-5 py-3">
             <i className="fas fa-money-bill-wave pr-1"></i>
             Salary Wars
           </h2>
         </div>
         {/* Stats */}
         <div className="col-9">
-          <div className="row navbar-nav pl-5 align-items-center">
+          <div className="row navbar-nav pl-5">
             {/* Revenue */}
             <div className="col nav-item nav-link px-5 col">
-              <h3 className="row justify-content-center">Revenue</h3>
-              <h3 className="row justify-content-center">
+              <h3 className="row ">Revenue</h3>
+              <h3 className="row ">
                 <span className="badge badge-success badge-swing">
                   {this.props.revenue}
                   <i className="fas fa-dollar-sign pl-5"></i>
@@ -28,8 +28,8 @@ class Gamenav extends Component {
             </div>
             {/* Security */}
             <div className="col nav-item nav-link px-5 col">
-              <h3 className="row justify-content-center">Security</h3>
-              <h3 className="row justify-content-center">
+              <h3 className="row ">Security</h3>
+              <h3 className="row ">
                 <span className="badge badge-warning badge-swing">
                   {this.props.security}
                   <i className="fas fa-shield-alt pl-4"></i>
@@ -38,8 +38,8 @@ class Gamenav extends Component {
             </div>
             {/* Mass security */}
             <div className="col nav-item nav-link px-5 col ">
-              <h3 className="row justify-content-center">Mass Security</h3>
-              <h3 className="row justify-content-center">
+              <h3 className="row ">Mass Security</h3>
+              <h3 className="row ">
                 <span className="badge badge-danger badge-swing">
                   {this.props.massSecurity}
                   <i className="fab fa-fort-awesome pl-4"></i>
