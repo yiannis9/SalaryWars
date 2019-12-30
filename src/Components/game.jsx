@@ -45,9 +45,8 @@ class Game extends Component {
           className="card-body"
           style={{ backgroundImage: "url(" + Background + ")" }}
         >
-          {/* <Settings onSubmit={this.props.setSettings}></Settings> */}
           {/* Clicker */}
-          <div>
+          <div className="">
             <img
               src={pclicker}
               className="App-pclicker"

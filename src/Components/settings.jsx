@@ -82,7 +82,7 @@ class Settings extends Component {
             <div className="col-4 mt-4">
               <button
                 type="submit"
-                className="btn btn-lg btn-block btn-success py-2 px-5"
+                className="btn btn-lg btn-block btn-success gbadge py-2 px-5"
                 //TODO
                 onClick={this.props.onSubmit}
               >

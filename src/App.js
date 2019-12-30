@@ -12,8 +12,8 @@ class App extends Component {
     super(props);
     this.state = {
       gameStarted: true,
-      setSets: false,
-      companyName: "",
+      setSets: true,
+      companyName: "E-corp",
       players: "10",
       myPos: 0,
       turns: "30",
@@ -22,6 +22,7 @@ class App extends Component {
       massSecurity: 0,
       incFactor: 1.5
     };
+    // binding functions
     this.gameStart = this.gameStart.bind(this);
     this.handleIncrement = this.handleIncrement.bind(this);
     this.setSettings = this.setSettings.bind(this);
@@ -36,7 +37,7 @@ class App extends Component {
     this.setState(state => ({
       gameStarted: !this.state.gameStarted,
       setSets: false,
-      companyName: "",
+      companyName: "E-corp",
       players: "10",
       myPos: 0,
       turns: "30",
@@ -51,26 +52,26 @@ class App extends Component {
   handleIncrement() {
     this.setState({ revenue: this.state.revenue + 1 * this.state.incFactor });
   }
-
+  // grab name in settings
   nameHandler = event => {
     this.setState({ companyName: event.target.value });
   };
-
+  // grab players from slider1
   slideHandler1 = event => {
     this.setState({ players: event.target.value });
   };
-
+  // grab turns from slider2
   slideHandler2 = event => {
     this.setState({ turns: event.target.value });
   };
-
+  // save settings and launch game
   setSettings() {
     this.setState(state => ({
       setSets: true
     }));
   }
-
-  gameRender = () => {
+  // calls game component after submitting settings
+  gameRender() {
     if (this.state.setSets) {
       return (
         <div className="App-body text-white container-fluid my-3 mx-1 row">
@@ -100,7 +101,7 @@ class App extends Component {
         </div>
       );
     }
-  };
+  }
 
   render() {
     return (
