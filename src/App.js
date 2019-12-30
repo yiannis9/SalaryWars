@@ -12,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       gameStarted: true,
-      setSets: true,
+      setSets: false,
       companyName: "",
       players: "10",
       myPos: 0,
