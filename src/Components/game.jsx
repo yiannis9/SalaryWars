@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import pclicker from "/home/keravnos/SalaryWars/salary-wars/src/assets/1340172427.svg";
 import Background from "/home/keravnos/SalaryWars/salary-wars/src/assets/bg-tiles.png";
-import Settings from "./settings";
 
 class Game extends Component {
   render() {
@@ -26,7 +25,7 @@ class Game extends Component {
           className="card-body"
           style={{ backgroundImage: "url(" + Background + ")" }}
         >
-          <Settings></Settings>
+          {/* <Settings onSubmit={this.props.setSettings}></Settings> */}
           {/* Clicker */}
           <div>
             <img
