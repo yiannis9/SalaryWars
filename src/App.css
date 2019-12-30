@@ -53,6 +53,10 @@ body,
   transform: scale(0.95);
 }
 
+.gbadge:hover {
+  transform: scale(1.05);
+}
+
 .start {
   font-size: 80px;
   text-align: center;

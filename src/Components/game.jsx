@@ -9,16 +9,36 @@ class Game extends Component {
       <div className="col-10 justify-content-center mt-3 card text-white bg-dark">
         <div className="card-header row">
           <div className="col">
-            <h4>Company: {this.props.companyName}</h4>
+            <h4>
+              Company:
+              <span className="gbadge badge badge-light badge-pill">
+                {this.props.companyName}
+              </span>
+            </h4>
           </div>
           <div className="col">
-            <h4>Players: {this.props.players}</h4>
+            <h4>
+              Players
+              <span className="gbadge badge badge-light badge-pill mx-1">
+                {this.props.players}
+              </span>
+            </h4>
           </div>
           <div className="col">
-            <h4>Position: {this.props.myPos}</h4>
+            <h4>
+              Position
+              <span className="gbadge badge badge-light badge-pill mx-1">
+                {this.props.myPos}
+              </span>
+            </h4>
           </div>
           <div className="col">
-            <h4>Turn: {this.props.turn}</h4>
+            <h4>
+              Turn
+              <span className="gbadge badge badge-light badge-pill mx-1">
+                {this.props.turns}
+              </span>
+            </h4>
           </div>
         </div>
         <div
