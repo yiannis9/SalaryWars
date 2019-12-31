@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import pclicker from "/home/keravnos/SalaryWars/salary-wars/src/assets/1340172427.svg";
 import Background from "/home/keravnos/SalaryWars/salary-wars/src/assets/bg-tiles.png";
-import desk from "/home/keravnos/SalaryWars/salary-wars/src/assets/desk.png";
+import Desk from "./desk";
 
 class Game extends Component {
   render() {
@@ -11,7 +11,7 @@ class Game extends Component {
         <div className="card-header row">
           <div className="col">
             <h4>
-              Company:
+              Company
               <span className="gbadge badge badge-light badge-pill">
                 {this.props.companyName}
               </span>
@@ -47,16 +47,7 @@ class Game extends Component {
           style={{ backgroundImage: "url(" + Background + ")" }}
         >
           {/* Add Chairs */}
-          <div className="d-inline">
-            <img
-              src={desk}
-              alt="pclicker"
-              style={{
-                height: "40%",
-                width: "40%"
-              }}
-            />
-          </div>
+          <Desk></Desk>
           {/* Clicker */}
           <div className="">
             <img

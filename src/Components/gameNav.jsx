@@ -8,10 +8,14 @@ class Gamenav extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark mx-auto row">
         {/* Navbar brand */}
         <div className="col-2 navbar-brand">
-          <h2 className="pl-1 pr-5 py-3">
-            <i className="fas fa-money-bill-wave pr-1"></i>
-            Salary Wars
-          </h2>
+          <h2 className="pl-1 pr-5 py-3 text-break">Salary Wars</h2>
+          {/* Desing some fancy graphic to have below brand */}
+          <i className="fas fa-money-bill-wave pr-1"></i>
+          <i className="fas fa-money-bill-wave pr-1"></i>
+          <i className="fas fa-money-bill-wave pr-1"></i>
+          <i className="fas fa-money-bill-wave pr-1"></i>
+          <i className="fas fa-money-bill-wave pr-1"></i>
+          <i className="fas fa-money-bill-wave pr-1"></i>
         </div>
         {/* Stats */}
         <div className="col-9">
